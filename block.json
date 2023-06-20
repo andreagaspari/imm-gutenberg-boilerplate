@@ -1,0 +1,11 @@
+{
+    "apiVersion": 2,
+    "title": "Boilerplate Block",
+   	"name": "immginificio/boilerplate",
+   	"description": "Boilerplate for Gutenberg Blocks",
+    "category": "immaginificio",
+	"icon": "hammer",
+	"textdomain": "immaginificio",
+    "editorScript": "file:./build/index.js"
+}
+
