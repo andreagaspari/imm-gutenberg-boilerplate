@@ -36,17 +36,17 @@ Steps:
 		  "name": "myguten-block",
 		  "version": "1.0.0",
 		  "description": "Test block",
-		  "main": "block.js",
+		  "main": "build/index.js",
 		  "scripts": {
 			"test": "echo \"Error: no test specified\" && exit 1"
 		  },
-		  "author": "mkaz",
+		  "author": "immaginificio",
 		  "license": "GPL-2.0-only"
 		}
 
 		Is this OK? (yes) yes
 		
-	2: npm install --save-dev --save-exact @wordpress/scripts
+	2: npm install --save-dev --save-exact @wordpress/scripts @wordpress/i18n
 
 	3: edit package.json
 		 ...
