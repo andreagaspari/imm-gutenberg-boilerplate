@@ -1,18 +1,23 @@
 # imm-gutenberg-boilerplate
 Gutenberg Block Boilerplate
 
-#GIT COMMANDS
+# GIT COMMANDS
 
+Setup:
+	
 	1. git init
 	2. git remote add origin git@github.com:andreagaspari/REPO_NAME.git
 	3. git pull origin main
-	4. git tag -a v0.0.0 -m "VERSION_DESC"
-	5. git add *
-	6. git commit -m "COMMIT_MESSAGE"
-	7. git push -u origin main
+	
+Commits 
+	
+	1. git add *
+	2. git tag -a v0.0.0 -m "VERSION_DESC"
+	3. git commit -m "COMMIT_MESSAGE"
+	4. git push -u origin main
 
 
-#NPM COMMANDS
+# NPM COMMANDS
 
 How-to: https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/
 
