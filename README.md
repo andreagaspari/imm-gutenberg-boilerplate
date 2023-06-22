@@ -1,70 +1,63 @@
-# imm-gutenberg-boilerplate
-Gutenberg Block Boilerplate
-
-# GIT COMMANDS
-
-Setup:
-	
-	1. git init
-	2. git remote add origin git@github.com:andreagaspari/REPO_NAME.git
-	3. git pull origin main
-	
-Commits 
-	
-	1. git add *
-	2. git tag -a v0.0.0 -m "VERSION_DESC"
-	3. git commit -m "COMMIT_MESSAGE"
-	4. git push -u origin main
-
-
-# NPM COMMANDS
+# Gutenberg Block Boilerplate
 
 How-to: https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/
 
-Steps:
+# NPM COMMANDS
+## 1. Initialize NPM
+Open folder in terminal and run
 
-	1: npm init
+	npm init
 
-		package name: (myguten-block) myguten-block
-		version: (1.0.0)
-		description: Test block
-		entry point: (index.js) build/index.js
-		test command:
-		git repository:
-		keywords:
-		author: immaginificio
-		license: (ISC) GPL-2.0-only
+Edit CAPITAL_WORDS during the process with your info
+
+	package name: (imm-gutenberg-boilerplate) PACKAGE_NAME
+	version: (1.0.0) PACKAGE_VERSION
+	description: PACKAGE_DESCRIPTION
+	entry point: (index.js) build/index.js
+	test command:
+	git repository:
+	keywords:
+	author: immaginificio
+	license: (ISC) GPL-3.0-or-later
 		
-		About to write to .../package.json:
+	About to write to .../package.json:
 
-		{
-		  "name": "myguten-block",
-		  "version": "1.0.0",
-		  "description": "Test block",
-		  "main": "build/index.js",
-		  "scripts": {
-			"test": "echo \"Error: no test specified\" && exit 1"
-		  },
-		  "author": "immaginificio",
-		  "license": "GPL-2.0-only"
-		}
+	{
+	  "name": "YOUR_PACKAGE_NAME",
+	  "version": "YOUR_PACKAGE_VERSION",
+	  "description": "YOUR_PACKAGE_DESCRIPTION",
+	  "main": "build/index.js",
+	  "scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	  },
+	  "author": "immaginificio",
+	  "license": "GPL-3.0-or-later"
+	}
 
-		Is this OK? (yes) yes
+	Is this OK? (yes) yes
+
+## Install packages
+Now it's time to install necessary packages. Run
 		
-	2: npm install --save-dev --save-exact @wordpress/scripts @wordpress/i18n
+	npm install --save-dev --save-exact @wordpress/scripts @wordpress/i18n
 
-	3: edit package.json
-		 ...
-		 	"scripts": {
-				"start": "wp-scripts start",
-				"build": "wp-scripts build"
-			  },
-		 ...
-		 
-	4: create src/index.js as entrypoint
-	
-	5: For developement mode run "npm start"
-	
-	6: To build run "npm run build"
+## Setting up build and start scripts
+The @wordpress/script package can compile your code using *build* just once, or you can use *start* to run a watcher in terminal. In order to use this scripts you have to edit the *package.json* file just generated
+
+	...
+		"scripts": {
+			"start": "wp-scripts start",
+			"build": "wp-scripts build"
+		},
+	...
+
+To use the scripts just run 
+	npm start
+for development mode, or 
+	npm build
+for package build.
+
+## Create the entrypoint
+Now you can start writing your code editing [index.js](src/index.js) in src folder
 	
 
