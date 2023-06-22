@@ -15,6 +15,7 @@ function boilerplate_register_block() {
 	// Register the block by passing the location of block.json to register_block_type.
 	register_block_type( __DIR__ );
 
+	// Setup translation management.
 	if ( function_exists( 'wp_set_script_translations' ) ) {
 		wp_set_script_translations( 'boilerplate', LANG_DOMAIN );
 	}
