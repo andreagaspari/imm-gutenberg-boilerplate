@@ -1,6 +1,8 @@
 # Gutenberg Block Boilerplate
 
-How-to: https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/
+This boilerplate allow you to start writing your custom gutenberg block easily, just clone it and follow the steps!
+
+Full guide: https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/
 
 # NPM COMMANDS
 ## 1. Initialize NPM
