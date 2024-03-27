@@ -1,11 +1,32 @@
 {
-    "apiVersion": 2,
+    "apiVersion": 3,
     "title": "Boilerplate Block",
-   	"name": "immginificio/boilerplate",
+   	"name": "immaginificio/boilerplate",
    	"description": "Boilerplate for Gutenberg Blocks",
     "category": "immaginificio",
 	"icon": "hammer",
 	"textdomain": "immaginificio",
-    "editorScript": "file:./build/index.js"
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./assets/css/editor.css",
+    "style": "file:./assets/css/style.css",
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "color": {
+            "background": true,
+            "text": true,
+            "link": true
+        },
+        "shadow": true,
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true
+        }
+    }
 }
 

@@ -1,8 +1,6 @@
 # Gutenberg Block Boilerplate
 
-This boilerplate allow you to start writing your custom gutenberg block easily, just clone it and follow the steps!
-
-Full guide: https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/
+How-to: https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/
 
 # NPM COMMANDS
 ## 1. Initialize NPM
@@ -54,9 +52,9 @@ The @wordpress/script package can compile your code using *build* just once, or 
 	...
 
 To use the scripts just run 
-	npm start
+	npm run start
 for development mode, or 
-	npm build
+	npm run build
 for package build.
 
 ## Create the entrypoint

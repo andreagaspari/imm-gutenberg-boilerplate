@@ -6,7 +6,7 @@
  * Passes translations to JavaScript.
  */
  
-function boilerplate_register_block() {
+function imm_gutenberg_boilerplate_register_block() {
 	if ( ! function_exists( 'register_block_type' ) ) {
 		// Gutenberg is not active.
 		return;
@@ -17,8 +17,8 @@ function boilerplate_register_block() {
 
 	// Setup translation management.
 	if ( function_exists( 'wp_set_script_translations' ) ) {
-		wp_set_script_translations( 'boilerplate', LANG_DOMAIN );
+		wp_set_script_translations( 'imm_gutenberg_boilerplate', LANG_DOMAIN );
 	}
 
 }
-add_action( 'init', 'boilerplate_register_block' );
+add_action( 'init', 'imm_gutenberg_boilerplate_register_block' );
