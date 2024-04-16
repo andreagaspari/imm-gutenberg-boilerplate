@@ -58,7 +58,7 @@ Now it's time to install necessary packages. Run
 	npm install --save-dev --save-exact @wordpress/scripts @wordpress/i18n
 
 
-## Create the entrypoint
+## 4. Create the entrypoint
 Now you can start writing your code editing [index.js](src/index.js) in src folder
 	
 
