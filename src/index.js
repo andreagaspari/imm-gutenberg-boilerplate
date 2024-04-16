@@ -5,12 +5,11 @@ import {
     useBlockProps 
 } from '@wordpress/block-editor';
 
-import json from '../block.json';
-const { name, title, description } = json;
+import block from '../block.json';
 
-registerBlockType( name, {
-    title: __(title, 'immaginificio'),
-    description: __(description, 'immaginificio'),
+registerBlockType( block.name, {
+    title: __(block.title, 'immaginificio'),
+    description: __(block.description, 'immaginificio'),
     attributes: {
         blockId: {
             type: 'string'
