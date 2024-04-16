@@ -17,7 +17,7 @@ Edit CAPITAL_WORDS during the process with your info
 	test command:
 	git repository:
 	keywords:
-	author: immaginificio
+	author: AUTHORNAME,
 	license: (ISC) GPL-3.0-or-later
 		
 	About to write to .../package.json:
@@ -30,18 +30,13 @@ Edit CAPITAL_WORDS during the process with your info
 	  "scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	  },
-	  "author": "immaginificio",
+	  "author": "YOUR_AUTHOR_NAME",
 	  "license": "GPL-3.0-or-later"
 	}
 
 	Is this OK? (yes) yes
 
-## Install packages
-Now it's time to install necessary packages. Run
-		
-	npm install --save-dev --save-exact @wordpress/scripts @wordpress/i18n
-
-## Setting up build and start scripts
+## 2. Setting up build and start scripts
 The @wordpress/script package can compile your code using *build* just once, or you can use *start* to run a watcher in terminal. In order to use this scripts you have to edit the *package.json* file just generated
 
 	...
@@ -56,6 +51,12 @@ To use the scripts just run
 for development mode, or 
 	npm run build
 for package build.
+
+## 3. Install packages
+Now it's time to install necessary packages. Run
+		
+	npm install --save-dev --save-exact @wordpress/scripts @wordpress/i18n
+
 
 ## Create the entrypoint
 Now you can start writing your code editing [index.js](src/index.js) in src folder
