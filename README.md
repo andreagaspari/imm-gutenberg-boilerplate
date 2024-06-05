@@ -55,7 +55,7 @@ for package build.
 ## 3. Install packages
 Now it's time to install necessary packages. Run
 		
-	npm install --save-dev --save-exact @wordpress/scripts @wordpress/i18n
+	npm install --save-dev --save-exact @wordpress/scripts@27 @wordpress/i18n
 
 
 ## 4. Create the entrypoint
