@@ -1,0 +1,12 @@
+{ 
+  "name": "",
+  "version": "",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "immaginificio",
+  "license": "GPL-3.0-or-later"
+}
