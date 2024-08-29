@@ -5,6 +5,8 @@ import {
     useBlockProps 
 } from '@wordpress/block-editor';
 
+import { useEffect } from '@wordpress/element';
+
 import block from '../block.json';
 
 registerBlockType( block.name, {
@@ -17,11 +19,14 @@ registerBlockType( block.name, {
     },
     edit: ( props ) => {
         const {
-            clientId
+            clientId,
+            setAttributes
 		} = props;
 
-        props.setAttributes({ blockId: clientId });
-        
+        useEffect(() => {
+            setAttributes({ blockId: clientId });
+        }, [clientId]);
+                
         const blockProps = useBlockProps();
 
         return <span { ...blockProps }>{__('Your block content goes here', 'immaginificio')}</span>;
